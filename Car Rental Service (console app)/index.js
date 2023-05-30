@@ -1,6 +1,6 @@
 /**
  * WEB322   –   Assignment 01
- * Name:       <Ngoc Diem Thy Nguyen>
+ * Name:       <Thy Nguyen>
  * Student ID: <105310221>
  * Date:       <Jan 25, 2023>
  *
