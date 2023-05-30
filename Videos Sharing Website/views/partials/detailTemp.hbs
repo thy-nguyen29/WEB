@@ -1,0 +1,22 @@
+
+<article class = "detailTemp">
+    <div id = "detailblock">
+        <p id = "detailTitle">{{this.title}}</p>
+        <p id = "detailName">{{this.channelName}}</p>
+        <p id = "detailDate">{{this.date}}</p>
+        <p id = "like"> {{this.likes}} Likes</p>
+
+        <form action="/addLike/{{this.id}}" method="POST">               
+            <button id = "likeButton">LIKE</button>
+        </form>
+
+        <P id = "add">Add a Comment</P>
+        <form action="/comment/{{this.id}}" method="POST">
+            <input id = "inputName" type="text" name="user" placeholder="username" >  <br> 
+            <textarea id = "inputCom" name="com" cols="20" rows="4"></textarea>    <br>        
+            <button id = "commentButton">Comment</button>
+        </form>
+    </div>
+   <iframe id = "vid" src="https://www.youtube.com/embed/{{this.id}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</article>

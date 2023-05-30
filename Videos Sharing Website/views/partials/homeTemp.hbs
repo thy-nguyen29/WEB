@@ -1,0 +1,13 @@
+<div class = "homeTemp">
+    <img id = "pic" src="{{this.image}}" alt="">
+    <div>
+        <p id = "title">{{this.title}}</p>
+        <p id = "name">{{this.channel}}</p>
+        <p id = "date">{{this.date}}</p>
+        <form action="/detail/{{this.id}}" method="POST">
+        <hidden id = "hidden" type="text" name="id" value="{{this.title}}" ></hidden>            
+        <button id = "view">View Details</button>
+        </form>
+        <hr class = "hr1">
+    </div>
+</div>

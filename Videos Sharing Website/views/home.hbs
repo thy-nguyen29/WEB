@@ -1,0 +1,11 @@
+<main>
+  {{#if noResult}}
+    <p id = "errorMessage">ERROR: RESULT NOT FOUND!</p>
+    <a id = "goBack" href="/home">Back to home</a>
+  {{/if}}
+
+  {{#each vid}} 
+    {{> homeTemp this}}
+  {{/each}}
+</main>
+   

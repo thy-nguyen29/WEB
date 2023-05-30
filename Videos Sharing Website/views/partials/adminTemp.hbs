@@ -1,0 +1,8 @@
+<article class = "adminTemp">
+    <p id = "title">{{this.title}}</p>
+    <p id = "likes">{{this.likes}} Likes</p>
+    <p id = "comment">{{this.comCount}} Comments</p>
+    <form action = "/delete/{{this.id}}" method = "POST">
+       <button id = "delete">Delete</button>
+    </form>
+</article>
