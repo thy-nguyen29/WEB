@@ -1,0 +1,24 @@
+<div class="col">
+    <div class="card border-success mb-3 h-100">
+        <img src={{this.image}} class="card-img-top" alt="" width="100" height="300">
+        <div class="card-body">
+            <h5 class="BookTitle" id="book-title">{{this.title}}</h5>
+            <p class="Author">{{this.author}}</p>
+        </div>
+        <div class="button">
+             {{#if this.borrower}}
+                <button type="button" class="btn btn-secondary" 
+                data-bs-toggle="popover" data-bs-title="ERROR!" 
+                data-bs-content="This book cannot be borrowed">ON LOAN</button>
+            {{else}}
+                <form action="/borrow/{{this.title}}" method="POST">             
+                    <button class="btn btn-success">BORROW</button>
+                </form>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+
+
+

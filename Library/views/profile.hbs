@@ -1,0 +1,16 @@
+<main>
+    <div class="container" id="profile-container">
+        <h1>Your Books</h1>
+        {{#if books.length}}
+        <p>Here is a list of your borrowed books. Click the button to return.</p>
+            {{#each books}}
+                {{> profileTemp this}}
+            {{/each}}
+        {{else}}
+            <p>You have no books borrowed.</p>
+            <div>
+                <a href="/">Go Back</a>
+            </div>
+        {{/if}}
+    </div>
+</main>

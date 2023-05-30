@@ -1,0 +1,19 @@
+<main>
+    <div class="container" id="error-container">
+        <div class="alert alert-success d-inline-flex p-2" role="alert">
+            <div id="error_message">
+                {{ error }}
+            </div>
+        </div>
+
+        {{#if log}}
+            <div id="back_button">
+                <a href="/">Go Back</a>
+            </div>
+        {{else}}
+            <div id="back_button">
+                <a href="/login">Go Back</a>
+            </div>          
+        {{/if}}
+    </div>
+</main>

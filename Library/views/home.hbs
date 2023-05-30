@@ -1,0 +1,15 @@
+<main>   
+    <div class="container" id="home-container">
+        <h2>Books in Library</h2>
+        <p>List of Books in the library</p> 
+        <div class="container-fluid" id="home-cards">
+            <div class="card-group mx-auto">
+                <div class="row row-cols-1 row-cols-md-5 g-4">          
+                    {{#each books}}
+                        {{> homeTemp this user=user}}                
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

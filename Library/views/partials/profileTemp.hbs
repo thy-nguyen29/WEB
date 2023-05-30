@@ -1,0 +1,19 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col-2">
+            <img src="{{this.image}}" class="img-thumbnail" alt="...">
+        </div>
+
+        <div class="col-lg-9">
+            <h1>{{this.title}}</h1>
+            <p class="Author">By: {{this.author}}</p>
+            <p class="Description">{{this.desc}}</p>
+        </div>
+        
+        <div class="col-lg-1">
+            <form action="/return/{{this.title}}" method="POST">             
+                <button class="btn btn-warning">Return</button>
+            </form>
+        </div>
+    </div>
+</div>

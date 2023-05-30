@@ -1,0 +1,47 @@
+[
+    {
+        "image": "https://www.linkpicture.com/q/C-for-dummy.jpg",
+        "title": "C++ for Dummies",
+        "author": "Stephen Randy Davis",
+        "desc": "The book provides step-by-step instruction from the ground up, helping beginners become programmers and allowing intermediate programmers to sharpen their skills.",
+        "borrower": ""  
+    },
+    {
+        "image": "https://www.linkpicture.com/q/GoT.jpg",
+        "title": "A Song of Ice and Fire",
+        "author": "George R.R. Martin",
+        "desc": "The world of Westeros is thrown into chaos when the king dies and the lineage is rumored to be tainted.",
+        "borrower": ""  
+    },
+    {
+        "image": "https://www.linkpicture.com/q/harry-potter_1.jpg",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "desc": "Harry Potter and the Philosopher's Stone is an enthralling start to Harry's journey toward coming to terms with his past and facing his future.",
+        "borrower": ""  
+    },
+    {
+        "image": "https://www.linkpicture.com/q/If_Tomorrow_Comes.jpg",
+        "title": "If Tomorrow Comes",
+        "author": "Sidney Sheldon",
+        "desc": "It is a story portraying an ordinary woman who is framed by the Mafia, her subsequent quest for vengeance towards them and her later life as a con artist.",
+        "borrower": ""  
+    },
+    {
+       "image": "https://www.linkpicture.com/q/lord-of-ring.jpg",
+        "title": "The Lord of The Rings",
+        "author": "J.R.R. Tolkien",
+        "desc": "The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.",
+        "borrower": ""  
+    }
+]
+
+
+[
+    {
+        "borrower": "0000"
+    },
+    {
+        "borrower": "1234"
+    }
+]
