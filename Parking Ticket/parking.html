@@ -1,0 +1,63 @@
+<!--
+/**
+ * WEB322   –   Assignment 02
+ * Name:       <Ngoc Diem Thy Nguyen>
+ * Student ID: <105310221>
+ * Date:       <Feb 06, 2023>
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *      
+ **/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ParkingLot</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="home" href="/parking">Home</a>
+        <a class="admin" href="/admin">Admin</a>
+    </nav>
+    <hr>
+    <main>
+
+        <h1 id="name">Pay For Parking</h1>
+        <p id="info">All Vehicles Must Pay For Parking! All Vehicles Parked Illegally Will Be Ticketed and Towed!</p>
+ 
+        <!--FORM DEFINITION-->     
+
+        <form class="form" action="/receipt" method="POST">
+            <div class="lot">
+                Choose A Parking Lot
+                <input type="text" list="lots" name="parkedLot" />
+                <datalist id="lots">
+                    <option value="Parking Lot A ($1.00 per hour)">
+                    <option value="Parking Lot B ($2.00 per hour)">
+                    <option value="Underground Parking Lot C ($3.00 per hour)">
+                </datalist>
+            </div>
+
+            <div class="hourPark">
+                <label for="hours">Hours</label>
+                <input type="text" name="parkedHour" placeholder="Enter Number of Hours">
+            </div>
+
+            <div class="license">
+                <label for="license">License Plate</label>
+                <input type="text" name="parkedLicense" placeholder="Enter License Plate">
+            </div>
+            
+            <button id="sub" type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+</html>
