@@ -1,0 +1,14 @@
+<div class="item">
+     <p>{{ this.name }}</p>
+         <img src="{{this.image}}" alt=""/>      
+             
+        {{#if this.available}}
+        <form action="/rent/{{this.id}}" method="POST">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <input type="text" name="day" placeholder="Days to rent? (Min.{{this.minRentDay}} days)">
+            <button type="submit">Rent</button>
+        </form>
+        {{else}}
+            <p id="thanks_message" style="background-color: aqua; margin-right: 1000px; text-align:center; font-weight:bold">Thanks for choosing me!</p>
+        {{/if}}
+</div>                               

@@ -1,0 +1,35 @@
+<main>
+<body>
+    <div id="rental_body">
+        <div class="container">
+        <div class="header_bar">
+            <div class="left_side">
+                <p>Modify Results: </p>
+                <form action="/update" method="POST" class="form-select">
+                    <select class="form-select" aria-label="Default select example" name="option">
+                        <option value="0">Choose an option</option>
+                        <option value="1">Available Items</option>
+                        <option value="2">Your Rentals</option>
+                    </select>
+                    <button type="submit">Update</button>               
+                </form>
+            </div>
+
+            <div class="right_side">
+                <form action="/return" method="POST" name="return">
+                    <button>Return all Items</button>
+                </form>
+            </div>         
+        </div>
+
+        <ul class="list_items"></ul>
+            <div id="rental_list">
+              {{#each listOfItems}}
+                {{> default this}}
+              {{/each}}
+            </div>
+    
+    </div>
+    </div>
+</body>
+</main>
